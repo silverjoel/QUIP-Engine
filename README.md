@@ -1,9 +1,7 @@
-# Storm Engine 2
-brought to you by Kot in Action Creative Artel
+# QUIP Engine
+an engine to update and unify the quake games
 
-Storm Engine 2 Readme - https://github.com/motorsep/StormEngine2
 
-Note: It due time minimal set of assets and external content authoring tools might be made available to the public under suitable licenses.
 
 DISCLAIMER
 ----------

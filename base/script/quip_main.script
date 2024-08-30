@@ -3,12 +3,12 @@
 #include "script/base_defines.script"
 
 // defs and util functions
-#include "script/se2_defs.script"
-#include "script/se2_events.script"
+#include "script/quip_defs.script"
+#include "script/quip_events.script"
 //#include "script/weapon_base.script"
 //#include "script/ai_base.script"
 //#include "script/ai_monster_base.script"
-#include "script/se2_utils.script"
+#include "script/quip_utils.script"
 
 // new AI/entity scripts
 //#include "script/base_entity.script"
@@ -55,7 +55,7 @@
 // test scripts
 //#include "script/test.script"
 
-void se2_main()
+void quip_main()
 {
 	sys.print( "Entering se2_main()\n");
 //	game_count = 0;

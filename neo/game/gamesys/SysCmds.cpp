@@ -159,9 +159,9 @@ void Cmd_ReloadScript_f( const idCmdArgs& args )
 	// recompile the scripts
 	gameLocal.program.Startup( SCRIPT_DEFAULT );
 	
-	if( fileSystem->ReadFile( "se2_main.script", NULL ) > 0 )
+	if( fileSystem->ReadFile( "quip_main.script", NULL ) > 0 )
 	{
-		gameLocal.program.CompileFile( "se2_main.script" );
+		gameLocal.program.CompileFile( "quip_main.script" );
 		gameLocal.program.FinishCompilation();
 	}
 	
@@ -177,9 +177,9 @@ CONSOLE_COMMAND( reloadScript2, "Doesn't thow an error...  Use this when switchi
 	// recompile the scripts
 	gameLocal.program.Startup( SCRIPT_DEFAULT );
 	
-	if( fileSystem->ReadFile( "se2_main.script", NULL ) > 0 )
+	if( fileSystem->ReadFile( "quip_main.script", NULL ) > 0 )
 	{
-		gameLocal.program.CompileFile( "se2_main.script" );
+		gameLocal.program.CompileFile( "quip_main.script" );
 		gameLocal.program.FinishCompilation();
 	}
 }

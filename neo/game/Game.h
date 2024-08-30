@@ -39,9 +39,9 @@ If you have questions concerning this license or the applicable additional terms
 */
 
 // default scripts
-#define SCRIPT_DEFAULTDEFS			"script/se2_defs.script"
-#define SCRIPT_DEFAULT				"script/se2_main.script"
-#define SCRIPT_DEFAULTFUNC			"se2_main"
+#define SCRIPT_DEFAULTDEFS			"script/quip_defs.script"
+#define SCRIPT_DEFAULT				"script/quip_main.script"
+#define SCRIPT_DEFAULTFUNC			"quip_main"
 
 struct gameReturn_t
 {

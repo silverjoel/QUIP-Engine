@@ -31,7 +31,7 @@ If you have questions concerning this license or the applicable additional terms
 #include "precompiled.h"
 
 #include "win_local.h"
-#include "rc/doom_resource.h"
+#include "rc/quip_resource.h"
 #include "../../renderer/tr_local.h"
 
 // WGL_ARB_extensions_string

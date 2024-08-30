@@ -66,7 +66,7 @@ void idMenuScreen_Shell_Credits::SetupCreditList()
 	
 	creditList.Clear();
 
-	creditList.Append( creditInfo_t( 3,	"Storm Engine 2"	) );
+	creditList.Append( creditInfo_t( 3,	"QUIP"	) );
 	creditList.Append( creditInfo_t() );
 	creditList.Append( creditInfo_t( 2,	"DEVELOPMENT TEAM"	) );
 	creditList.Append( creditInfo_t() );	

@@ -1214,8 +1214,8 @@ idCommonLocal::InitSIMD
 */
 void idCommonLocal::InitSIMD()
 {
-	idSIMD::InitProcessor( "stormengine2", com_forceGenericSIMD.GetBool() ); // SE2 fix: was "doom"
-	idDmapSIMD::InitProcessor( "stormengine2-dmap", com_forceGenericSIMD.GetBool() ); // foresthale 2014-05-21: changed phaeton to phaeton-dmap
+	idSIMD::InitProcessor( "QUIP", com_forceGenericSIMD.GetBool() ); // SE2 fix: was "doom"
+	idDmapSIMD::InitProcessor( "QUIP-dmap", com_forceGenericSIMD.GetBool() ); // foresthale 2014-05-21: changed phaeton to phaeton-dmap
 	com_forceGenericSIMD.ClearModified();
 }
 

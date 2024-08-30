@@ -39,7 +39,7 @@ If you have questions concerning this license or the applicable additional terms
 #endif
 
 #ifndef __GAME_LOCAL_H__
-#include "../../d3xp/Game.h"
+#include "../../game/Game.h"
 #endif
 
 class idInterpreter;

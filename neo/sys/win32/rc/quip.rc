@@ -1,6 +1,6 @@
 // Microsoft Visual C++ generated resource script.
 //
-#include "doom_resource.h"
+#include "quip_resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 1 TEXTINCLUDE 
 BEGIN
-    "doom_resource.h\0"
+    "quip_resource.h\0"
 END
 
 2 TEXTINCLUDE 
@@ -105,8 +105,8 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-//IDI_ICON1               ICON                    "res\\doom.ico"
-IDI_ICON1               ICON                    "res\\stormengine2.ico"
+
+IDI_ICON1               ICON                    "res\\quip.ico"
 #endif    // English (U.S.) resources
 /////////////////////////////////////////////////////////////////////////////
 

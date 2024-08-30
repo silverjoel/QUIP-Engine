@@ -27,12 +27,12 @@ If you have questions concerning this license or the applicable additional terms
 
 ===========================================================================
 */
-#define GAME_NAME						"Storm Engine 2"		// appears on window titles and errors
+#define GAME_NAME						"QUIP"		// appears on window titles and errors
 
 // RB: changed home folder so we don't break the savegame of the original game
-#define SAVE_PATH						"\\Kot-in-Action\\StormEngine2"
+#define SAVE_PATH						"\\QUIP"
 
-#define ENGINE_VERSION					"Storm Engine 2"	// printed in console
+#define ENGINE_VERSION					"QUIP"	// printed in console
 // RB end
 
 #define	BASE_GAMEDIR					"base"
@@ -55,10 +55,10 @@ If you have questions concerning this license or the applicable additional terms
 
 // RB begin
 // Linux info
-#define LINUX_DEFAULT_PATH				"/usr/local/games/stormengine2"
+#define LINUX_DEFAULT_PATH				"/usr/local/games/QUIP"
 // RB end
 
 // editor info
-#define EDITOR_DEFAULT_PROJECT			"stormengine2.qe4"
+#define EDITOR_DEFAULT_PROJECT			"QUIP.qe4"
 #define EDITOR_REGISTRY_KEY				"SE2Radiant"
-#define EDITOR_WINDOWTEXT				"Storm Engine 2 Level Editor"
+#define EDITOR_WINDOWTEXT				"QUIP Level Editor"

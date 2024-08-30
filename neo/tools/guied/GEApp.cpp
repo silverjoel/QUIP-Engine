@@ -119,7 +119,7 @@ bool rvGEApp::Initialize ( void )
 
 	// Create the main window
 	mMDIFrame = CreateWindow ( "QUAKE4_GUIEDITOR_CLASS",
-							  "Storm Engine 2 GUI Editor",
+							  "QUIP GUI Editor",
 							  WS_OVERLAPPEDWINDOW | WS_CLIPSIBLINGS,
 							  CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
 							  NULL, NULL, mInstance, (LPVOID)this );
@@ -1576,5 +1576,5 @@ Displays a modal message box
 */
 int rvGEApp::MessageBox ( const char* text, int flags )
 {
-	return ::MessageBox ( mMDIFrame, text, "Storm Engine 2 GUI Editor", flags );
+	return ::MessageBox ( mMDIFrame, text, "QUIP GUI Editor", flags );
 }

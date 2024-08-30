@@ -36,9 +36,9 @@ If you have questions concerning this license or the applicable additional terms
 #include "DebuggerQuickWatchDlg.h"
 #include "DebuggerFindDlg.h"
 
-#define APP_TITLE				"Storm Engine 2 Script Debugger"
+#define APP_TITLE				"QUIP Script Debugger"
 
-#define DEBUGGERWINDOWCLASS		"STORMENGINE2_DEBUGGER_WINDOW"
+#define DEBUGGERWINDOWCLASS		"QUIP_DEBUGGER_WINDOW"
 #define ID_DBG_WINDOWMIN		18900
 #define ID_DBG_WINDOWMAX		19900
 

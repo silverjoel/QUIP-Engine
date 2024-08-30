@@ -2027,27 +2027,27 @@ void idAFEntity_Vehicle::Spawn()
 	}
 
 	if ( !aimJointName[0] ) {
-		gameLocal.Error( "SteelStorm2_Vehicle '%s' no Turret Aim joint specified", name.c_str() );
+		gameLocal.Error( "QUIP_Vehicle '%s' no Turret Aim joint specified", name.c_str() );
 	}
 	aimJoint = animator.GetJointHandle( aimJointName );
 	
 	if ( !turnJointName[0] ) {
-		gameLocal.Error( "SteelStorm2_Vehicle '%s' no Turret Turn joint specified", name.c_str() );
+		gameLocal.Error( "QUIP_Vehicle '%s' no Turret Turn joint specified", name.c_str() );
 	}
 	turnJoint = animator.GetJointHandle( turnJointName );
 
 	if ( !fireJointName[0] ) {
-		gameLocal.Error( "SteelStorm2_Vehicle '%s' no Gun Rotate joint specified", name.c_str() );
+		gameLocal.Error( "QUIP_Vehicle '%s' no Gun Rotate joint specified", name.c_str() );
 	}
 	fireJoint = animator.GetJointHandle( fireJointName );
 
 	if ( !barrelJointName[0] ) {
-		gameLocal.Error( "SteelStorm2_Vehicle '%s' no Gun barrel joint specified", name.c_str() );
+		gameLocal.Error( "QUIP_Vehicle '%s' no Gun barrel joint specified", name.c_str() );
 	}
 	barrelJoint = animator.GetJointHandle( barrelJointName );
 	
 	if ( !headlightJointName[0] ) {
-		gameLocal.Error( "SteelStorm2_Vehicle '%s' no headlight joint specified", name.c_str() );
+		gameLocal.Error( "QUIP_Vehicle '%s' no headlight joint specified", name.c_str() );
 	}
 	headlightJoint = animator.GetJointHandle( headlightJointName );
 	
@@ -2064,22 +2064,22 @@ void idAFEntity_Vehicle::Spawn()
 		{
 			if ( exhaustJoint1 == INVALID_JOINT )
 			{
-				gameLocal.Error( "SteelStorm2_Vehicle '%s' no exhaust joint specified", name.c_str() );
+				gameLocal.Error( "QUIP_Vehicle '%s' no exhaust joint specified", name.c_str() );
 			}
 
 			if ( exhaustJoint2 == INVALID_JOINT )
 			{
-				gameLocal.Error( "SteelStorm2_Vehicle '%s' no exhaust joint specified", name.c_str() );
+				gameLocal.Error( "QUIP_Vehicle '%s' no exhaust joint specified", name.c_str() );
 			}
 
 			if ( exhaustJoint3 == INVALID_JOINT )
 			{
-				gameLocal.Error( "SteelStorm2_Vehicle '%s' no exhaust joint specified", name.c_str() );
+				gameLocal.Error( "QUIP_Vehicle '%s' no exhaust joint specified", name.c_str() );
 			}
 
 			if ( exhaustJoint4 == INVALID_JOINT )
 			{
-				gameLocal.Error( "SteelStorm2_Vehicle '%s' no exhaust joint specified", name.c_str() );
+				gameLocal.Error( "QUIP_Vehicle '%s' no exhaust joint specified", name.c_str() );
 			}
 		}
 	}

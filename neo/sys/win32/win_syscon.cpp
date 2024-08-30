@@ -27,7 +27,7 @@ If you have questions concerning this license or the applicable additional terms
 
 ===========================================================================
 */
-#pragma hdrstop
+
 #include "precompiled.h"
 
 #include <errno.h>
@@ -39,7 +39,8 @@ If you have questions concerning this license or the applicable additional terms
 #include <conio.h>
 
 #include "win_local.h"
-#include "rc/doom_resource.h"
+#include "rc/quip_resource.h"
+#pragma hdrstop
 
 #define COPY_ID			1
 #define QUIT_ID			2

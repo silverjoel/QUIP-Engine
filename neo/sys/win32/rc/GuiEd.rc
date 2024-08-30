@@ -279,7 +279,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP |
 CAPTION "About SE2 GUI Editor"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "Storm Engine 2 GUI Editor",IDC_STATIC,35,7,62,8
+    LTEXT           "QUIP GUI Editor",IDC_STATIC,35,7,62,8
     LTEXT           "Version 0.16",IDC_STATIC,35,17,41,8
     LTEXT           "Original version by Raven",IDC_STATIC,35,
                     28,134,8

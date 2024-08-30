@@ -30,9 +30,9 @@ If you have questions concerning this license or the applicable additional terms
 #include "precompiled.h"
 #pragma hdrstop
 
-#include "../d3xp/gamesys/Event.h"
-#include "../d3xp/gamesys/Class.h"
-#include "../d3xp/anim/Anim.h"
+#include "../game/gamesys/Event.h"
+#include "../game/gamesys/Class.h"
+#include "../game/anim/Anim.h"
 
 /*
 

@@ -30,12 +30,12 @@ If you have questions concerning this license or the applicable additional terms
 #include "precompiled.h"
 #pragma hdrstop
 
-#include "../../d3xp/gamesys/Event.h"
-#include "../../d3xp/gamesys/Class.h"
-#include "../../d3xp/script/Script_Program.h"
-#include "../../d3xp/script/Script_Interpreter.h"
-#include "../../d3xp/script/Script_Thread.h"
-#include "../../d3xp/script/Script_Compiler.h"
+#include "../../game/gamesys/Event.h"
+#include "../../game/gamesys/Class.h"
+#include "../../game/script/Script_Program.h"
+#include "../../game/script/Script_Interpreter.h"
+#include "../../game/script/Script_Thread.h"
+#include "../../game/script/Script_Compiler.h"
 #include "DebuggerApp.h"
 #include "DebuggerServer.h"
 

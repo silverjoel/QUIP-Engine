@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
-project(StormEngine2)
+project(QUIP)
 
 option(USE_MFC_TOOLS
 		"Compile the built-in MFC based tools" ON)
@@ -559,113 +559,113 @@ file(GLOB SWF_INCLUDES swf/*.h)
 file(GLOB SWF_SOURCES swf/*.cpp)
 
 
-set(GAMED3XP_INCLUDES
-	d3xp/Achievements.h
-	d3xp/Actor.h
-	d3xp/AF.h
-	d3xp/AFEntity.h
-	d3xp/AimAssist.h
-	d3xp/BrittleFracture.h
-	d3xp/Camera.h
-	#d3xp/EndLevel.h
-	d3xp/Entity.h
-	d3xp/EntityUtils.h
-	d3xp/AnimatedEntity.h
-	d3xp/Fx.h
-	d3xp/Game.h
-	d3xp/GameEdit.h
-	d3xp/Game_local.h
-	d3xp/Grabber.h
-	d3xp/IK.h
-	d3xp/Item.h
-	d3xp/Inventory.h
-	d3xp/Leaderboards.h
-	d3xp/Light.h
-	d3xp/Misc.h
-	d3xp/Moveable.h
-	d3xp/Mover.h
-	d3xp/MultiplayerGame.h
-	d3xp/Player.h
-	d3xp/PlayerIcon.h
-	d3xp/PlayerView.h
-	d3xp/PredictedValue.h
-	d3xp/Projectile.h
-	d3xp/Pvs.h
-	d3xp/SecurityCamera.h
-	d3xp/SmokeParticles.h
-	d3xp/Sound.h
-	d3xp/Target.h
-	d3xp/Trigger.h
-	d3xp/Weapon.h
-	d3xp/WorldSpawn.h)
+set(GAMEQUIP_INCLUDES
+	game/Achievements.h
+	game/Actor.h
+	game/AF.h
+	game/AFEntity.h
+	game/AimAssist.h
+	game/BrittleFracture.h
+	game/Camera.h
+	#game/EndLevel.h
+	game/Entity.h
+	game/EntityUtils.h
+	game/AnimatedEntity.h
+	game/Fx.h
+	game/Game.h
+	game/GameEdit.h
+	game/Game_local.h
+	game/Grabber.h
+	game/IK.h
+	game/Item.h
+	game/Inventory.h
+	game/Leaderboards.h
+	game/Light.h
+	game/Misc.h
+	game/Moveable.h
+	game/Mover.h
+	game/MultiplayerGame.h
+	game/Player.h
+	game/PlayerIcon.h
+	game/PlayerView.h
+	game/PredictedValue.h
+	game/Projectile.h
+	game/Pvs.h
+	game/SecurityCamera.h
+	game/SmokeParticles.h
+	game/Sound.h
+	game/Target.h
+	game/Trigger.h
+	game/Weapon.h
+	game/WorldSpawn.h)
 	
-set(GAMED3XP_SOURCES
-	d3xp/Achievements.cpp
-	d3xp/Actor.cpp
-	d3xp/Actor_Events.cpp
-	d3xp/AF.cpp
-	d3xp/AFEntity.cpp
-	d3xp/AimAssist.cpp
-	d3xp/BrittleFracture.cpp
-	d3xp/Camera.cpp
-	#d3xp/EndLevel.cpp
-	d3xp/Entity.cpp
-	d3xp/EntityUtils.cpp
-	d3xp/AnimatedEntity.cpp
-	d3xp/Fx.cpp
-	d3xp/GameEdit.cpp
-	d3xp/Game_local.cpp
-	d3xp/Game_network.cpp
-	d3xp/Grabber.cpp
-	d3xp/IK.cpp
-	d3xp/Item.cpp
-	d3xp/Inventory.cpp
-	d3xp/Leaderboards.cpp
-	d3xp/Light.cpp
-	d3xp/Misc.cpp
-	d3xp/Moveable.cpp
-	d3xp/Mover.cpp
-	d3xp/MultiplayerGame.cpp
-	d3xp/Player.cpp
-	d3xp/PlayerIcon.cpp
-	d3xp/PlayerView.cpp
-	d3xp/precompiled.cpp
-	d3xp/Projectile.cpp
-	d3xp/Pvs.cpp
-	d3xp/SecurityCamera.cpp
-	d3xp/SmokeParticles.cpp
-	d3xp/Sound.cpp
-	d3xp/Target.cpp
-	d3xp/Trigger.cpp
-	d3xp/Weapon.cpp
-	d3xp/WorldSpawn.cpp)
+set(GAMEQUIP_SOURCES
+	game/Achievements.cpp
+	game/Actor.cpp
+	game/Actor_Events.cpp
+	game/AF.cpp
+	game/AFEntity.cpp
+	game/AimAssist.cpp
+	game/BrittleFracture.cpp
+	game/Camera.cpp
+	#game/EndLevel.cpp
+	game/Entity.cpp
+	game/EntityUtils.cpp
+	game/AnimatedEntity.cpp
+	game/Fx.cpp
+	game/GameEdit.cpp
+	game/Game_local.cpp
+	game/Game_network.cpp
+	game/Grabber.cpp
+	game/IK.cpp
+	game/Item.cpp
+	game/Inventory.cpp
+	game/Leaderboards.cpp
+	game/Light.cpp
+	game/Misc.cpp
+	game/Moveable.cpp
+	game/Mover.cpp
+	game/MultiplayerGame.cpp
+	game/Player.cpp
+	game/PlayerIcon.cpp
+	game/PlayerView.cpp
+	game/precompiled.cpp
+	game/Projectile.cpp
+	game/Pvs.cpp
+	game/SecurityCamera.cpp
+	game/SmokeParticles.cpp
+	game/Sound.cpp
+	game/Target.cpp
+	game/Trigger.cpp
+	game/Weapon.cpp
+	game/WorldSpawn.cpp)
 
-file(GLOB GAMED3XP_AI_INCLUDES d3xp/ai/*.h)
-file(GLOB GAMED3XP_AI_SOURCES d3xp/ai/*.cpp)
+file(GLOB GAMEQUIP_AI_INCLUDES game/ai/*.h)
+file(GLOB GAMEQUIP_AI_SOURCES game/ai/*.cpp)
 
-file(GLOB GAMED3XP_ANIM_INCLUDES d3xp/anim/*.h)
-file(GLOB GAMED3XP_ANIM_SOURCES d3xp/anim/*.cpp)
+file(GLOB GAMEQUIP_ANIM_INCLUDES game/anim/*.h)
+file(GLOB GAMEQUIP_ANIM_SOURCES game/anim/*.cpp)
 
-file(GLOB GAMED3XP_GAMESYS_INCLUDES d3xp/gamesys/*.h)
-set(GAMED3XP_GAMESYS_SOURCES
-	#d3xp/gamesys/Callbacks.cpp
-	d3xp/gamesys/Class.cpp
-	#d3xp/gamesys/DebugGraph.cpp
-	d3xp/gamesys/Event.cpp
-	d3xp/gamesys/SaveGame.cpp
-	d3xp/gamesys/SysCmds.cpp
-	d3xp/gamesys/SysCvar.cpp
-	#d3xp/gamesys/TypeInfo.cpp
+file(GLOB GAMEQUIP_GAMESYS_INCLUDES game/gamesys/*.h)
+set(GAMEQUIP_GAMESYS_SOURCES
+	#game/gamesys/Callbacks.cpp
+	game/gamesys/Class.cpp
+	#game/gamesys/DebugGraph.cpp
+	game/gamesys/Event.cpp
+	game/gamesys/SaveGame.cpp
+	game/gamesys/SysCmds.cpp
+	game/gamesys/SysCvar.cpp
+	#game/gamesys/TypeInfo.cpp
 	)
 
-file(GLOB GAMED3XP_MENUS_INCLUDES d3xp/menus/*.h)
-file(GLOB GAMED3XP_MENUS_SOURCES d3xp/menus/*.cpp)
+file(GLOB GAMEQUIP_MENUS_INCLUDES game/menus/*.h)
+file(GLOB GAMEQUIP_MENUS_SOURCES game/menus/*.cpp)
 	
-file(GLOB GAMED3XP_PHYSICS_INCLUDES d3xp/physics/*.h)
-file(GLOB GAMED3XP_PHYSICS_SOURCES d3xp/physics/*.cpp)
+file(GLOB GAMEQUIP_PHYSICS_INCLUDES game/physics/*.h)
+file(GLOB GAMEQUIP_PHYSICS_SOURCES game/physics/*.cpp)
 
-file(GLOB GAMED3XP_SCRIPT_INCLUDES d3xp/script/*.h)
-file(GLOB GAMED3XP_SCRIPT_SOURCES d3xp/script/*.cpp)
+file(GLOB GAMEQUIP_SCRIPT_INCLUDES game/script/*.h)
+file(GLOB GAMEQUIP_SCRIPT_SOURCES game/script/*.cpp)
 
 
 file(GLOB COMPILER_INCLUDES tools/compilers/*.h)
@@ -804,76 +804,11 @@ if(MSVC)
 endif()
 
 set(WIN32_RESOURCES
-	# sys/win32/rc/res/BEVEL.BMP
-	# sys/win32/rc/res/BITMAP2.BMP
-	# sys/win32/rc/res/BMP00001.BMP
-	# sys/win32/rc/res/BMP0002.BMP
-	# sys/win32/rc/res/DEFTEX.WAL
-	# sys/win32/rc/res/ENDCAP.BMP
-	# sys/win32/rc/res/GetString.htm
-	# sys/win32/rc/res/IBEVEL.BMP
-	# sys/win32/rc/res/IENDCAP.BMP
-	# sys/win32/rc/res/MEFileToolbar.bmp
-	# sys/win32/rc/res/MEtoolbar.bmp
-	# sys/win32/rc/res/MaterialEditor.ico
-	# sys/win32/rc/res/PropTree.rc2
-	# sys/win32/rc/res/Q.BMP
-	# sys/win32/rc/res/RADIANT3.GIF
-	# sys/win32/rc/res/Radiant.ico
-	# sys/win32/rc/res/RadiantDoc.ico
-	# sys/win32/rc/res/TOOLBAR1.BMP
-	# sys/win32/rc/res/TOOLBAR2.BMP
-	# sys/win32/rc/res/Toolbar.bmp
-	# sys/win32/rc/res/VIEWDEFA.BMP
-	# sys/win32/rc/res/VIEWOPPO.BMP
-	# sys/win32/rc/res/bmp00002.bmp
-	# sys/win32/rc/res/bmp00003.bmp
-	# sys/win32/rc/res/bmp00004.bmp
-	# sys/win32/rc/res/bmp00005.bmp
-	# sys/win32/rc/res/cchsb.bmp
-	# sys/win32/rc/res/ccrgb.bmp
-	# sys/win32/rc/res/dbg_back.bmp
-	# sys/win32/rc/res/dbg_breakpoint.ico
-	# sys/win32/rc/res/dbg_current.ico
-	# sys/win32/rc/res/dbg_currentline.ico
-	# sys/win32/rc/res/dbg_empty.ico
-	# sys/win32/rc/res/dbg_open.bmp
-	# sys/win32/rc/res/dbg_toolbar.bmp
-	sys/win32/rc/res/doom.ico
-	# sys/win32/rc/res/fpoint.cur
-	# sys/win32/rc/res/fxed_link.ico
-	# sys/win32/rc/res/fxed_toolbar.bmp
-	# sys/win32/rc/res/fxeditor.ico
-	# sys/win32/rc/res/guied.ico
-	# sys/win32/rc/res/guied_collapse.ico
-	# sys/win32/rc/res/guied_expand.ico
-	# sys/win32/rc/res/guied_hand.cur
-	# sys/win32/rc/res/guied_nav_visible.ico
-	# sys/win32/rc/res/guied_nav_visibledisabled.ico
-	# sys/win32/rc/res/guied_scripts.ico
-	# sys/win32/rc/res/guied_scripts_white.ico
-	# sys/win32/rc/res/guied_viewer_toolbar.bmp
-	# sys/win32/rc/res/icon2.ico
-	# sys/win32/rc/res/logo_sm3dfx.bmp
-	# sys/win32/rc/res/matedtree.bmp
-	# sys/win32/rc/res/me_disabled_icon.ico
-	# sys/win32/rc/res/me_enabled.ico
-	# sys/win32/rc/res/me_off_icon.ico
-	# sys/win32/rc/res/me_on_icon.ico
-	# sys/win32/rc/res/qe3.ico
-	# sys/win32/rc/res/shaderbar.bmp
-	# sys/win32/rc/res/shaderdoc.ico
-	# sys/win32/rc/res/shaderframe.ico
-	# sys/win32/rc/res/spliter.cur
+	sys/win32/rc/res/quip.ico
 	)
 
+list(APPEND WIN32_RESOURCES sys/win32/rc/quip.rc)
 
-
-#if(USE_MFC_TOOLS)
-	list(APPEND WIN32_RESOURCES sys/win32/rc/doom.rc)
-#else()
-#	list(APPEND WIN32_RESOURCES sys/win32/rc/doom_nomfc.rc)
-#endif()
 
 
 file(GLOB POSIX_INCLUDES sys/posix/*.h)
@@ -943,26 +878,26 @@ source_group("sys" FILES ${SYS_INCLUDES})
 source_group("sys" FILES ${SYS_SOURCES})
 
 
-source_group("game-d3xp" FILES ${GAMED3XP_INCLUDES})
-source_group("game-d3xp" FILES ${GAMED3XP_SOURCES})
+source_group("game" FILES ${GAMEQUIP_INCLUDES})
+source_group("game" FILES ${GAMEQUIP_SOURCES})
 
-source_group("game-d3xp\\ai" FILES ${GAMED3XP_AI_INCLUDES})
-source_group("game-d3xp\\ai" FILES ${GAMED3XP_AI_SOURCES})
+source_group("game\\ai" FILES ${GAMEQUIP_AI_INCLUDES})
+source_group("game\\ai" FILES ${GAMEQUIP_AI_SOURCES})
 
-source_group("game-d3xp\\anim" FILES ${GAMED3XP_ANIM_INCLUDES})
-source_group("game-d3xp\\anim" FILES ${GAMED3XP_ANIM_SOURCES})
+source_group("game\\anim" FILES ${GAMEQUIP_ANIM_INCLUDES})
+source_group("game\\anim" FILES ${GAMEQUIP_ANIM_SOURCES})
 
-source_group("game-d3xp\\gamesys" FILES ${GAMED3XP_GAMESYS_INCLUDES})
-source_group("game-d3xp\\gamesys" FILES ${GAMED3XP_GAMESYS_SOURCES})
+source_group("game\\gamesys" FILES ${GAMEQUIP_GAMESYS_INCLUDES})
+source_group("game\\gamesys" FILES ${GAMEQUIP_GAMESYS_SOURCES})
 
-source_group("game-d3xp\\menus" FILES ${GAMED3XP_MENUS_INCLUDES})
-source_group("game-d3xp\\menus" FILES ${GAMED3XP_MENUS_SOURCES})
+source_group("game\\menus" FILES ${GAMEQUIP_MENUS_INCLUDES})
+source_group("game\\menus" FILES ${GAMEQUIP_MENUS_SOURCES})
 
-source_group("game-d3xp\\physics" FILES ${GAMED3XP_PHYSICS_INCLUDES})
-source_group("game-d3xp\\physics" FILES ${GAMED3XP_PHYSICS_SOURCES})
+source_group("game\\physics" FILES ${GAMEQUIP_PHYSICS_INCLUDES})
+source_group("game\\physics" FILES ${GAMEQUIP_PHYSICS_SOURCES})
 
-source_group("game-d3xp\\script" FILES ${GAMED3XP_SCRIPT_INCLUDES})
-source_group("game-d3xp\\script" FILES ${GAMED3XP_SCRIPT_SOURCES})
+source_group("game\\script" FILES ${GAMEQUIP_SCRIPT_INCLUDES})
+source_group("game\\script" FILES ${GAMEQUIP_SCRIPT_SOURCES})
 
 
 
@@ -1103,22 +1038,22 @@ add_definitions(-D__DOOM__
 				)
 if(MONOLITH)
 	list(APPEND RBDOOM3_INCLUDES
-		${GAMED3XP_INCLUDES}
-		${GAMED3XP_AI_INCLUDES} 
-		${GAMED3XP_ANIM_INCLUDES} 
-		${GAMED3XP_GAMESYS_INCLUDES} 
-		${GAMED3XP_MENUS_INCLUDES}
-		${GAMED3XP_PHYSICS_INCLUDES}
-		${GAMED3XP_SCRIPT_INCLUDES})
+		${GAMEQUIP_INCLUDES}
+		${GAMEQUIP_AI_INCLUDES} 
+		${GAMEQUIP_ANIM_INCLUDES} 
+		${GAMEQUIP_GAMESYS_INCLUDES} 
+		${GAMEQUIP_MENUS_INCLUDES}
+		${GAMEQUIP_PHYSICS_INCLUDES}
+		${GAMEQUIP_SCRIPT_INCLUDES})
 		
 	list(APPEND RBDOOM3_SOURCES
-		${GAMED3XP_SOURCES}
-		${GAMED3XP_AI_SOURCES}
-		${GAMED3XP_ANIM_SOURCES}
-		${GAMED3XP_GAMESYS_SOURCES}
-		${GAMED3XP_MENUS_SOURCES}
-		${GAMED3XP_PHYSICS_SOURCES}
-		${GAMED3XP_SCRIPT_SOURCES})
+		${GAMEQUIP_SOURCES}
+		${GAMEQUIP_AI_SOURCES}
+		${GAMEQUIP_ANIM_SOURCES}
+		${GAMEQUIP_GAMESYS_SOURCES}
+		${GAMEQUIP_MENUS_SOURCES}
+		${GAMEQUIP_PHYSICS_SOURCES}
+		${GAMEQUIP_SCRIPT_SOURCES})
 else()
 	add_definitions(-D__DOOM_DLL__)
 endif()
@@ -1182,15 +1117,16 @@ if(MSVC)
 		list(APPEND RBDOOM3_INCLUDES ${OPENAL_INCLUDES})
 		list(APPEND RBDOOM3_SOURCES ${OPENAL_SOURCES})
 		
-		set(OpenAL_LIBRARIES
-			OpenAL32)
+#		set(OpenAL_LIBRARIES
+#			OpenAL32 OpenAL64)
 			
 		if(CMAKE_CL_64)
-
+			set (OpenAL_LIBRARIES OpenAL64)
 			install(FILES libs/openal-soft/lib/win64/OpenAL64.dll DESTINATION .)
 		else()
+			set (OpenAL_LIBRARIES OpenAL32)
 			install(FILES libs/openal-soft/lib/win32/OpenAL32.dll DESTINATION .)
-			install(FILES libs/openal-soft/lib/win32/OpenAL32.pdb DESTINATION .)
+#			install(FILES libs/openal-soft/lib/win32/OpenAL32.pdb DESTINATION .)
 		endif()
 	else()
 		list(APPEND RBDOOM3_INCLUDES ${XAUDIO2_INCLUDES})
@@ -1267,16 +1203,16 @@ if(MSVC)
 	
 	list(APPEND RBDOOM3_SOURCES ${WIN32_RESOURCES})
 	
-	add_executable(StormEngine2 WIN32 ${RBDOOM3_INCLUDES} ${RBDOOM3_SOURCES})
+	add_executable(QUIP WIN32 ${RBDOOM3_INCLUDES} ${RBDOOM3_SOURCES})
 		
-	#add_custom_command(TARGET SteelStorm2_bfg
+	#add_custom_command(TARGET QUIP
     #               PRE_BUILD
 	#			   COMMAND nmake ARGS /f Makefile.vc6 CFG=release
 	#			   WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/libs/curl/lib
     #               COMMENT "Compiling libcURL")
 		
-	add_dependencies(StormEngine2 idlib)
-	target_link_libraries(StormEngine2
+	add_dependencies(QUIP idlib)
+	target_link_libraries(QUIP
 		idlib
 		${DirectX_LIBRARIES}
 		#libcurl 
@@ -1293,10 +1229,10 @@ if(MSVC)
 		
 	#CMAKE_BINARY_DIR
 	if(CMAKE_CL_64)
-		install(TARGETS StormEngine2
+		install(TARGETS QUIP
 			RUNTIME DESTINATION .)
 	else()
-		install(TARGETS StormEngine2
+		install(TARGETS QUIP
 			RUNTIME DESTINATION .)
 	endif()
 	
@@ -1308,8 +1244,6 @@ else()
 	if(WIN32)
 		list(APPEND RBDOOM3_SOURCES
 			${WIN32_INCLUDES} ${WIN32_SOURCES} ${WIN32_RESOURCES})  
-	
-		#list(REMOVE_ITEM WIN32_SOURCES sys/win32/win_cpu.cpp)
 		list(APPEND WIN32_SOURCES sys/sdl/sdl_cpu.cpp)
 	endif()
 	
@@ -1400,13 +1334,13 @@ else()
 
 	SEPARATE_ARGUMENTS(_compiler_FLAGS)
 	
-	# we need to recreate the precompiled header for SteelStorm2_bfg 
+	# we need to recreate the precompiled header for QUIP 
 	# (i.e. can't use the one created for idlib before)
 	# because some definitions (e.g. -D__IDLIB__ -D__DOOM_DLL__) differ
-	add_custom_target(precomp_header_StormEngine2 ALL
+	add_custom_target(precomp_header_QUIP ALL
 	                  COMMAND ${CMAKE_CXX_COMPILER} ${_compiler_FLAGS} -x c++-header idlib/precompiled.h -o idlib/precompiled.h.gch
 	                  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-	                  COMMENT "Creating idlib/precompiled.h.gch for StormEngine2"
+	                  COMMENT "Creating idlib/precompiled.h.gch for QUIP"
 	                  )
 	
 	if(WIN32)
@@ -1424,15 +1358,15 @@ else()
 	                  )
 	
 	# make sure this is run after creating idlib
-	add_dependencies(precomp_header_StormEngine2 idlib)
+	add_dependencies(precomp_header_QUIP idlib)
 	
-	add_executable(StormEngine2 WIN32 ${RBDOOM3_SOURCES})
+	add_executable(QUIP WIN32 ${RBDOOM3_SOURCES})
 	
 	# make sure precompiled header is created before executable is compiled
-	add_dependencies(StormEngine2 precomp_header_StormEngine2)
+	add_dependencies(QUIP precomp_header_QUIP)
 	
 	# make sure precompiled header is deleted after executable is compiled
-	add_dependencies(rm_precomp_header StormEngine2)
+	add_dependencies(rm_precomp_header QUIP)
 	
 	if(MINGW)
 		include_directories(libs/sdl2/include)
@@ -1442,7 +1376,7 @@ else()
 	
 	if(WIN32)
 	
-		target_link_libraries(StormEngine2
+		target_link_libraries(QUIP
 			idlib
 			${DirectX_LIBRARIES}
 			#libcurl 
@@ -1460,7 +1394,7 @@ else()
 	endif()
 	
 	IF("${CMAKE_SYSTEM}" MATCHES "Linux")
-		target_link_libraries(StormEngine2
+		target_link_libraries(QUIP
 			idlib
 			GL
 			pthread
@@ -1472,7 +1406,7 @@ else()
 	endif()
 
 	IF("${CMAKE_SYSTEM}" MATCHES "FreeBSD")
-		target_link_libraries(StormEngine2
+		target_link_libraries(QUIP
 			idlib
 			GL
 			pthread

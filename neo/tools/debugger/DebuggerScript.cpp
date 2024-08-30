@@ -32,10 +32,10 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "DebuggerApp.h"
 #include "DebuggerScript.h"
-#include "../../d3xp/script/Script_Program.h"
+#include "../../game/script/Script_Program.h"
 #include "../../ui/Window.h"
 #include "../../ui/UserInterfaceLocal.h"
-#include "../../d3xp/Game_local.h"
+#include "../../game/Game_local.h"
 
 /*
 ================
